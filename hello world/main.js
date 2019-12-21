@@ -21,3 +21,9 @@ let win;
  }
 
  app.on('ready', createWindow);
+
+ app.on('activate', () => {
+   if (win === nul) {
+     createWindow()
+   }
+ })
