@@ -1,0 +1,50 @@
+@import "raleway.css";
+body {
+  text-align: center;
+  background: linear-gradient(45deg,rgba(255,29,17,0.9),rgba(255,162,6,0.9)) no-repeat center center fixed;
+  overflow: hidden;
+}
+form {
+  max-width: 560px;
+  width: 85%;
+  /*background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 67%, #2B86C5 100%);*/
+  background: none;
+  position: relative;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  float: left;
+  border-radius: 8px;
+  text-align: center;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;*/
+  font-family: "Raleway";
+  margin: 0 auto 50px;
+}
+
+input {
+  position: relative;
+  background: none;
+  color: white;
+  border:2px solid white;
+  border-radius: 8px;
+  transition: 0.2s;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin: 6px;
+}
+input:hover {
+  color: black;
+  border:2px solid black;
+  transition: 0.2s;
+}
+h2 {
+  text-align: center;
+}
+
+.sc {
+  background: #fff;
+  color: #000;
+}
