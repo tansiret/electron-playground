@@ -1,14 +1,14 @@
 console.log('main project working');
 
-const electron = require("electron");
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const deskgap = require("deskgap");
+const app = deskgap.app;
+const BrowserWindow = deskgap.BrowserWindow;
 const path = require("path");
 const url = require("url");
 
 let win;
  function createWindow() {
-   win = new BrowserWindow({width: 580, minWidth: 580, maxWidth: 580, height: 535, minHeight: 535, maxHeight: 535, icon: path.join(__dirname + '/icon.png')});
+   win = new BrowserWindow({width: 565, minWidth: 565, maxWidth: 565, height: 545, minHeight: 535, maxHeight: 545, icon: path.join(__dirname + '/icon.png')});
    win.loadURL(url.format({
      pathname: path.join(__dirname, 'index.html'),
      protocol: 'file',
@@ -28,6 +28,6 @@ let win;
    }
  })
 
- electron.app.on('browser-window-created',function(e,window) {
+ deskgap.app.on('browser-window-created',function(e,window) {
      window.setMenu(null);
  });

@@ -1,2 +1,2 @@
 # electron-playground
-Personal Electron playground.
+Personal Electron and Deskgap playground.
